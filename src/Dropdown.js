@@ -35,7 +35,7 @@ Dropdown.propTypes = {
 
 Dropdown.defaultProps = {
   values: [ '' ],
-  selecetd: 0
+  selected: 0
 }
 
 module.exports = Dropdown;

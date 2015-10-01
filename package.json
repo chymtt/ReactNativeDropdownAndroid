@@ -1,7 +1,7 @@
 {
   "name": "react-native-dropdown-android",
-  "version": "0.0.2",
-  "description": "Simple wrapper for Android's Spinner",
+  "version": "0.0.3",
+  "description": "Simple wrapper for Android's Spinner to use with react-native",
   "main": "src/Dropdown.js",
   "repository": {
     "type": "git",
