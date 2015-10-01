@@ -85,5 +85,5 @@ An int indicating which option (zero-based) is currently selected
 
 ## Questions or suggestions?
 
-Feel free to [open an issue](https://github.com/chymtt/ReactNativeDropdownAndroid/issues)
+Feel free to [open an issue](https://github.com/chymtt/ReactNativeDropdownAndroid/issues)  
 [Pull requests](https://github.com/chymtt/ReactNativeDropdownAndroid/pulls) are also welcome
