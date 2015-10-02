@@ -64,7 +64,8 @@ var Dropdown = require('react-native-dropdown-android');
     return (
       <Dropdown
         style={{ height: 20, width: 200}}
-        values={[ '--Choose--', 'one', 2, 3.5, { four: 4 }, [ 5, 6, 7 ], false ]} selected={1} />
+        values={[ '--Choose--', 'one', 2, 3.5, { four: 4 }, [ 5, 6, 7 ], false ]} 
+        selected={1} onChange={(data) => { console.log(data); }} />
     );
   }
 ```
@@ -82,6 +83,10 @@ An array of options. This should be provided with an __array of strings__. Any t
 ### selected
 
 An int indicating which option (zero-based) is currently selected
+
+### onChange(data)
+
+Callback with data in the form `data = { selected: 1, value: 'one' }`
 
 ## Questions or suggestions?
 
