@@ -15,7 +15,7 @@
     "dropdown"
   ],
   "peerDependencies": {
-    "react-native": "^0.11.4"
+    "react-native": ">=0.11.4"
   },
   "author": "Do Anh Tu <chymtt@gmail.com>",
   "license": "MIT",
