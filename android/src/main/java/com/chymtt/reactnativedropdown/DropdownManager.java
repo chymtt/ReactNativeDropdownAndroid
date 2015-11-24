@@ -17,33 +17,14 @@ public class DropdownManager extends SimpleViewManager<Dropdown> {
     protected Dropdown createViewInstance(ThemedReactContext context) {
         return new Dropdown(context);
     }
-
-    @UIProp(UIProp.Type.ARRAY)
-    public static final String PROP_VALUES = "values";
-
-    @UIProp(UIProp.Type.NUMBER)
-    public static final String PROP_SELECTED = "selected";
-
-    @ReactProp(name = PROP_VALUES)
-    public void setSrc(Dropdown view, @Nullable CatalystStylesDiffMap props) {
-    view.setValues(props.getArray(PROP_VALUES));
+    
+    @ReactProp(name = "values")
+    public void setValues(Dropdown view, ReadableArray values) {
+    view.setValues(values);
     }
 
-    @ReactProp(name = PROP_SELECTED)
-    public void setSrc(Dropdown view, @Nullable CatalystStylesDiffMap props) {
-    view.setSelected(props.getInt(PROP_SELECTED, 0));
+    @ReactProp(name = "selected")
+    public void setSelected(Dropdown view, int selected) {
+    view.setSelected(selected);
     }
-
-    // @Override
-    // public void updateView(Dropdown view, CatalystStylesDiffMap props) {
-    //     super.updateView(view, props);
-    //
-    //     if (props.hasKey(PROP_VALUES)) {
-    //         view.setValues(props.getArray(PROP_VALUES));
-    //     }
-    //
-    //     if (props.hasKey(PROP_SELECTED)) {
-    //         view.setSelected(props.getInt(PROP_SELECTED, 0));
-    //     }
-    // }
 }
