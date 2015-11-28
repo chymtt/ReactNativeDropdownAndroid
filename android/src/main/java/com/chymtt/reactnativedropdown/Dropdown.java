@@ -23,7 +23,7 @@ public class Dropdown extends AppCompatSpinner {
     public Dropdown(ThemedReactContext context) {
         super(context, 0);
         mContext = context;
-        this.setOnItemSelectedListener(ON_ITEM_SELECTED_LISTENER);
+        setOnItemSelectedListener(ON_ITEM_SELECTED_LISTENER);
     }
 
     public void setValues(ReadableArray values) {
@@ -52,7 +52,8 @@ public class Dropdown extends AppCompatSpinner {
         ArrayAdapter<String> spinnerArrayAdapter = new ArrayAdapter<>(mContext,
                 android.R.layout.simple_spinner_item, spinnerArray);
         spinnerArrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        this.setAdapter(spinnerArrayAdapter);
+        setAdapter(spinnerArrayAdapter);
+        setSelection(mSelected);
     }
 
     public void setSelected(int selected) {
@@ -60,7 +61,7 @@ public class Dropdown extends AppCompatSpinner {
             return;
         }
         mSelected = selected;
-        this.setSelection(mSelected);
+        setSelection(mSelected);
     }
 
     private final AdapterView.OnItemSelectedListener ON_ITEM_SELECTED_LISTENER =
