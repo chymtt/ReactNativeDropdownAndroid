@@ -19,6 +19,7 @@ public class Dropdown extends AppCompatSpinner {
     private Context mContext;
     private boolean firstEventFired = false;
     private int mSelected = 0;
+    private int selected = 0;
 
     public Dropdown(ThemedReactContext context) {
         super(context, 0);
@@ -57,7 +58,7 @@ public class Dropdown extends AppCompatSpinner {
     }
 
     public void setSelected(int selected) {
-        if (selected == mSelected) {
+        if (selected == mSelected && selected == this.selected) {
             return;
         }
         mSelected = selected;
@@ -68,7 +69,7 @@ public class Dropdown extends AppCompatSpinner {
             new AdapterView.OnItemSelectedListener() {
                 @Override
                 public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
-                    mSelected = pos;
+                    selected = pos;
                     // It always fire this event when the component starts, thus we need to surpress
                     // the first event
                     if (!firstEventFired) {
