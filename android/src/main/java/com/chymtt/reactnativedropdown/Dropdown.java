@@ -28,7 +28,7 @@ public class Dropdown extends AppCompatSpinner {
     }
 
     public void setValues(ReadableArray values) {
-        ArrayList<String> spinnerArray = new ArrayList<>();
+        ArrayList<String> spinnerArray = new ArrayList<String>();
         for (int i = 0; i < values.size(); i++) {
             String type = values.getType(i).name();
             if ("String".equals(type)) {
@@ -50,7 +50,7 @@ public class Dropdown extends AppCompatSpinner {
                 }
             }
         }
-        ArrayAdapter<String> spinnerArrayAdapter = new ArrayAdapter<>(mContext,
+        ArrayAdapter<String> spinnerArrayAdapter = new ArrayAdapter<String>(mContext,
                 android.R.layout.simple_spinner_item, spinnerArray);
         spinnerArrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         setAdapter(spinnerArrayAdapter);

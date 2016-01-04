@@ -13,7 +13,7 @@ import java.util.List;
 public class DropdownPackage implements ReactPackage {
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactApplicationContext) {
-        return new ArrayList<>();
+        return new ArrayList<NativeModule>();
     }
 
     @Override
