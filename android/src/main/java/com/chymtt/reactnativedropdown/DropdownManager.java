@@ -2,7 +2,7 @@ package com.chymtt.reactnativedropdown;
 
 import com.facebook.react.uimanager.SimpleViewManager;
 import com.facebook.react.uimanager.ThemedReactContext;
-import com.facebook.react.uimanager.ReactProp;
+import com.facebook.react.uimanager.annotations.ReactProp;
 import com.facebook.react.bridge.ReadableArray;
 
 public class DropdownManager extends SimpleViewManager<Dropdown> {
