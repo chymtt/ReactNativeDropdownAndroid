@@ -4,7 +4,7 @@ A simple wrapper for Android's Spinner
 
 ## Installation Android
 1. `npm install --save react-native-dropdown-android`
-2. In `android/setting.gradle`
+2. In `android/settings.gradle`
 
     ```gradle
     ...
