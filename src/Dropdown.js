@@ -1,7 +1,7 @@
 'use strict';
 
-var React = require('react-native');
-var { requireNativeComponent, PropTypes, View } = React;
+import React, { Component, PropTypes } from 'react';
+import { requireNativeComponent, View } from 'react-native';
 
 var NativeDropdown = requireNativeComponent('DropdownAndroid', Dropdown);
 
