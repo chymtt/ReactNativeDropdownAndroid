@@ -11,8 +11,8 @@ public class DropdownEvent extends Event<DropdownEvent> {
     private final int mPosition;
     private final String mValue;
 
-    public DropdownEvent(int viewId, long timestampMs, int position, String value) {
-        super(viewId, timestampMs);
+    public DropdownEvent(int viewId, int position, String value) {
+        super(viewId);
         mPosition = position;
         mValue = value;
     }

@@ -82,7 +82,6 @@ public class Dropdown extends AppCompatSpinner {
                             .getEventDispatcher().dispatchEvent(
                                 new DropdownEvent(
                                     getId(),
-                                    SystemClock.uptimeMillis(),
                                     pos,
                                     parent.getSelectedItem().toString()));
                 }
